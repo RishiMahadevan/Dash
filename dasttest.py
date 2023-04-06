@@ -9,6 +9,7 @@ from plotly.subplots import make_subplots
 from yahoo_fin.stock_info import *
 
 app = dash.Dash(__name__)
+server=app.server
 
 def fundamental(string):
     string=string.upper()
